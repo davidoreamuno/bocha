@@ -1,0 +1,37 @@
+﻿@page
+@model Web.Pages.Vehiculos.EliminarModel
+@{
+}
+
+<h1>Eliminar Vehiculo</h1>
+
+<div class="Container">
+    <form method="psot">
+
+        <div class="col-md-8">
+        
+            <div class="Card">
+                <div class="card-body">
+                    <h5 class="card-tittle">@Html.DisplayFor(modelo => modelo.Vehiculo.Marca) @Html.DisplayFor(modelo => modelo.Vehiculo.Modelo)</h5>
+                    <p class="card-text">
+                        <div>
+                            <b>@Html.DisplayFor(modelo => modelo.Vehiculo.Placa):</b>
+                            @Html.DisplayFor(modelo => modelo.Vehiculo.Placa)
+                        </div>
+                        <div>
+                            <b>@Html.DisplayFor(modelo => modelo.Vehiculo.Anio):</b>
+                            @Html.DisplayFor(modelo => modelo.Vehiculo.Anio)
+                        </div>
+                        <div>
+                            <b>@Html.DisplayFor(modelo => modelo.Vehiculo.Precio):</b>
+                            @Html.DisplayFor(modelo => modelo.Vehiculo.Precio)
+                        </div>
+                    </p>
+                    <p class="card-text><small class=" text-muted>@Html.DisplayFor(modelo => modelo.Vehiculo.CorreoPropietario) | @Html.DisplayFor(modelo => modelo.Vehiculo.CorreoPropietario)</p>
+                </div>
+            </div>
+        </div>
+        <a class="btn btn-primary" asp-page="./Index">Regresar</a>
+        <button type="submit" class="btn btn-danger">Eliminar</button>
+    </form>
+</div>

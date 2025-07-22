@@ -1,0 +1,20 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="container mt-5 text-center">
+    <h1 class="display-4 mb-4">Bienvenido</h1>
+
+    
+
+    <div class="d-flex justify-content-center gap-3">
+        <a asp-page="/Vehiculos/Index" class="btn btn-primary btn-lg">
+            🚗 Ir a Vehículos
+        </a>
+        <a asp-page="/Marca/Index" class="btn btn-success btn-lg">
+            🏷️ Ir a Marcas
+        </a>
+    </div>
+</div>
