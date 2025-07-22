@@ -1,0 +1,26 @@
+﻿@page
+@model Web.Pages.Marcas.EditarModel
+@{
+    ViewData["Title"] = "Editar Marca";
+}
+
+<h2>Editar Marca</h2>
+
+<form method="post">
+    <input type="hidden" asp-for="marca.IdMarca" />
+
+    <div class="mb-3">
+        <label asp-for="marca.Nombre" class="form-label"></label>
+        <input asp-for="marca.Nombre" class="form-control" />
+        <span asp-validation-for="marca.Nombre" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <a asp-page="./Index" class="btn btn-secondary">Regresar</a>
+        <button type="submit" class="btn btn-success">Guardar Cambios</button>
+    </div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

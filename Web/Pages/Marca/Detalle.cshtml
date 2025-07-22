@@ -1,0 +1,26 @@
+﻿@page
+@model Web.Pages.Marcas.DetalleModel
+@{
+    ViewData["Title"] = "Detalle de Marca";
+}
+
+<h2>Detalle de Marca</h2>
+
+@if (Model.marca != null)
+{
+    <div class="mb-3">
+        <strong>ID:</strong> @Model.marca.Id
+    </div>
+    <div class="mb-3">
+        <strong>Nombre:</strong> @Model.marca.Nombre
+    </div>
+
+    <a asp-page="./Index" class="btn btn-secondary">Volver a la lista</a>
+}
+else
+{
+    <div class="alert alert-warning">
+        No se encontró la marca solicitada.
+    </div>
+    <a asp-page="./Index" class="btn btn-secondary">Volver a la lista</a>
+}

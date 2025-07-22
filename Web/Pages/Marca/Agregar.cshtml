@@ -1,0 +1,22 @@
+﻿@page
+@model Web.Pages.Marcas.AgregarModel
+@{
+    ViewData["Title"] = "Agregar Marca";
+}
+
+<h2>Agregar Marca</h2>
+
+<form method="post">
+    <div class="mb-3">
+        <label asp-for="marca.Nombre" class="form-label"></label>
+        <input asp-for="marca.Nombre" class="form-control" />
+        <span asp-validation-for="marca.Nombre" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Guardar</button>
+    <a asp-page="./Index" class="btn btn-secondary">Cancelar</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

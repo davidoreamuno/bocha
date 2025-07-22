@@ -1,0 +1,7 @@
+﻿CREATE PROCEDURE EliminarMarca
+    @Id UNIQUEIDENTIFIER
+AS
+BEGIN
+    DELETE FROM [dbo].[Marcas]
+    WHERE Id = @Id;
+END;
