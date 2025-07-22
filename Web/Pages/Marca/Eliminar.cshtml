@@ -1,0 +1,20 @@
+﻿@page
+@model Web.Pages.Marcas.EliminarModel
+@{
+    ViewData["Title"] = "Eliminar Marca";
+}
+
+<h2>Eliminar Marca</h2>
+
+<h4>¿Está seguro que desea eliminar esta marca?</h4>
+
+<div class="mb-3">
+    <strong>Nombre: </strong> @Model.marca.Nombre
+</div>
+
+<form method="post">
+    <input type="hidden" name="id" value="@Model.marca.Id" />
+
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+    <a asp-page="./Index" class="btn btn-secondary">Cancelar</a>
+</form>

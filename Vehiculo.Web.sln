@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36221.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abstracciones", "Abstracciones\Abstracciones.csproj", "{6ED3A24D-B671-41AC-9F14-9D68B9BC7C78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reglas", "Reglas\Reglas.csproj", "{7254D07C-2537-43B3-B4B8-20CF33F70D67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "Web\Web.csproj", "{C75F3CB6-919A-4761-9990-0B3AC33B1122}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6ED3A24D-B671-41AC-9F14-9D68B9BC7C78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ED3A24D-B671-41AC-9F14-9D68B9BC7C78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ED3A24D-B671-41AC-9F14-9D68B9BC7C78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ED3A24D-B671-41AC-9F14-9D68B9BC7C78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7254D07C-2537-43B3-B4B8-20CF33F70D67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7254D07C-2537-43B3-B4B8-20CF33F70D67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7254D07C-2537-43B3-B4B8-20CF33F70D67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7254D07C-2537-43B3-B4B8-20CF33F70D67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C75F3CB6-919A-4761-9990-0B3AC33B1122}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C75F3CB6-919A-4761-9990-0B3AC33B1122}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C75F3CB6-919A-4761-9990-0B3AC33B1122}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C75F3CB6-919A-4761-9990-0B3AC33B1122}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CC6A95D4-18F2-44BA-B153-93E3F34BEA3E}
+	EndGlobalSection
+EndGlobal

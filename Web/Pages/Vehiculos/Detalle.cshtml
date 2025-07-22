@@ -1,0 +1,29 @@
+﻿@page
+@model Web.Pages.Vehiculos.DetalleModel
+@{
+}
+<h1>Detalle Vehiculo</h1>
+
+<div class="container">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-tittle">@Html.DisplayFor(modelo => modelo.Vehiculo.Marca)@Html.DisplayFor(modelo => modelo.Vehiculo.Modelo)</h5>
+                <p class="card-text">
+                    <div>
+                        <b>@Html.DisplayNameFor(modelo=>modelo.Vehiculo.Placa):</b>
+                        @Html.DisplayNameFor(modelo => modelo.Vehiculo.Placa)
+                    </div>
+                    <div>
+                        <b>@Html.DisplayNameFor(modelo => modelo.Vehiculo.Anio):</b>
+                        @Html.DisplayNameFor(modelo => modelo.Vehiculo.Anio)
+                    </div>
+                    <div>
+                        <b>@Html.DisplayNameFor(modelo => modelo.Vehiculo.Precio):</b>
+                        @Html.DisplayNameFor(modelo => modelo.Vehiculo.Precio)
+                    </div>
+                </p>
+            </<div>
+        </div>
+    </div>
+</dic>
